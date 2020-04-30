@@ -1,0 +1,50 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+/** Directives in Tailwind*/
+
+
+h1 {
+    @apply text-4xl font-bold;
+}
+
+.btn {
+    @apply text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+    @apply bg-blue-500;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-400;
+}
+
+.btn-blue:focus {
+    @apply shadow-outline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 3px;
+}
+
+
+
+.cursive {
+    font-family: 'Indie Flower', cursive;
+    @apply text-2xl font-bold;
+}
+
+.highlight {
+    color: cyan;
+}
